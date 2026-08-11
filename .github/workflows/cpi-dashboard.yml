@@ -1,4 +1,4 @@
-name: CPI · Dashboard (drift check)
+name: CPI - Dashboard (drift check)
 
 on:
   workflow_dispatch:
