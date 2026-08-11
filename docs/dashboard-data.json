@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-11T11:09:19.478431+00:00",
-  "allUpToDate": false,
+  "generatedAt": "2026-08-11T11:11:32.957018+00:00",
+  "allUpToDate": true,
   "packageCount": 1,
   "packages": [
     {
       "packageId": "JakovDEV",
-      "syncedAt": "2026-08-11T11:07:58.252950+00:00",
+      "syncedAt": "2026-08-11T11:10:45.826645+00:00",
       "cpiPackageVersion": "",
       "cpiModifiedDate": "1786434611333",
-      "upToDate": false,
+      "upToDate": true,
       "artifacts": [
         {
           "id": "iflow_test_1",
           "name": "iflow_test_1",
-          "gitVersion": "1.0.3",
-          "cpiVersion": "Active",
-          "status": "outdated"
+          "gitVersion": "1.0.4",
+          "cpiVersion": "1.0.4",
+          "status": "up-to-date"
         },
         {
           "id": "iflow_test_2",
