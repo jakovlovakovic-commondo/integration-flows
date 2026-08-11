@@ -1,0 +1,52 @@
+name: CPI · Download packages to git
+
+on:
+  workflow_dispatch:
+    inputs:
+      package_ids:
+        description: "Comma-separated Package IDs (leave empty to use the CPI_PACKAGE_IDS variable)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cpi-download
+  cancel-in-progress: false
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    env:
+      CPI_API_URL: ${{ secrets.CPI_API_URL }}
+      CPI_USER: ${{ secrets.CPI_USER }}
+      CPI_PASSWORD: ${{ secrets.CPI_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Resolve package list
+        id: pkgs
+        run: |
+          IDS="${{ inputs.package_ids }}"
+          [ -z "$IDS" ] && IDS="${{ vars.CPI_PACKAGE_IDS }}"
+          if [ -z "$IDS" ]; then
+            echo "::error::No package IDs. Set the CPI_PACKAGE_IDS variable or pass the package_ids input."
+            exit 1
+          fi
+          echo "ids=$IDS" >> "$GITHUB_OUTPUT"
+
+      - name: Download & extract packages
+        run: python3 scripts/download_packages.py "${{ steps.pkgs.outputs.ids }}"
+
+      - name: Commit & push
+        run: |
+          git config user.name "cpi-bot"
+          git config user.email "cpi-bot@users.noreply.github.com"
+          git add packages/
+          if git diff --cached --quiet; then
+            echo "No changes — packages already up to date in git."
+          else
+            git commit -m "chore(cpi): sync ${{ steps.pkgs.outputs.ids }} [skip ci]"
+            git push
+          fi
