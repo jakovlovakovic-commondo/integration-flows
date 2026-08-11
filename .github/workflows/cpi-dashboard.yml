@@ -3,7 +3,7 @@ name: CPI · Dashboard (drift check)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 9 * * *"  # every day at 06:00 UTC
+    - cron: "0 6 * * *"  # every day at 06:00 UTC
 
 permissions:
   contents: write
