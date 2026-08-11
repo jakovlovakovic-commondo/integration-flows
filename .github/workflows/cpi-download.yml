@@ -1,4 +1,4 @@
-name: CPI · Download packages to git
+name: CPI - Download packages to git
 
 on:
   workflow_dispatch:
