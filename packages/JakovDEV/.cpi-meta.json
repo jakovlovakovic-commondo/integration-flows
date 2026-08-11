@@ -1,0 +1,16 @@
+{
+  "packageId": "JakovDEV",
+  "syncedAt": "2026-08-11T08:44:08.764671+00:00",
+  "artifacts": [
+    {
+      "id": "iflow_test_1",
+      "name": "iflow_test_1",
+      "version": "1.0.1"
+    },
+    {
+      "id": "iflow_test_2",
+      "name": "iflow_test_2",
+      "version": "1.0.2"
+    }
+  ]
+}
