@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-11T11:19:45.338095+00:00",
-  "allUpToDate": true,
+  "generatedAt": "2026-08-11T11:20:49.676678+00:00",
+  "allUpToDate": false,
   "packageCount": 1,
   "packages": [
     {
@@ -8,14 +8,14 @@
       "syncedAt": "2026-08-11T11:10:45.826645+00:00",
       "cpiPackageVersion": "",
       "cpiModifiedDate": "1786434611333",
-      "upToDate": true,
+      "upToDate": false,
       "artifacts": [
         {
           "id": "iflow_test_1",
           "name": "iflow_test_1",
           "gitVersion": "1.0.4",
-          "cpiVersion": "1.0.4",
-          "status": "up-to-date"
+          "cpiVersion": "Active",
+          "status": "outdated"
         },
         {
           "id": "iflow_test_2",
