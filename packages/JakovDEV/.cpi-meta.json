@@ -1,11 +1,11 @@
 {
   "packageId": "JakovDEV",
-  "syncedAt": "2026-08-11T08:44:08.764671+00:00",
+  "syncedAt": "2026-08-11T08:53:45.151575+00:00",
   "artifacts": [
     {
       "id": "iflow_test_1",
       "name": "iflow_test_1",
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     {
       "id": "iflow_test_2",
