@@ -89,27 +89,27 @@
 <body>
   <div class="top"><div class="wrap">
     <div class="brand">CPI Sync <span>Status</span></div>
-    <div class="gen">generated 2026-08-13 09:47 UTC</div>
+    <div class="gen">generated 2026-08-14 09:42 UTC</div>
   </div></div>
 
   <main class="wrap">
-    <section class="verdict ok">
+    <section class="verdict warn">
       <span class="dot"></span>
-      <div><h1>Everything is in sync</h1><p>All 2 artifact(s) across 1 package(s) match CPI.</p></div>
+      <div><h1>1 package(s) need attention</h1><p>Some artifacts in git no longer match the active version in CPI.</p></div>
     </section>
 
     <section class="stats">
       <div class="stat"><div class="n">1</div><div class="l">Packages</div></div>
-      <div class="stat ok"><div class="n">1</div><div class="l">In sync</div></div>
-      <div class="stat warn"><div class="n">0</div><div class="l">Drifted</div></div>
+      <div class="stat ok"><div class="n">0</div><div class="l">In sync</div></div>
+      <div class="stat warn"><div class="n">1</div><div class="l">Drifted</div></div>
       <div class="stat"><div class="n">2</div><div class="l">Artifacts</div></div>
     </section>
 
     
-        <article class="card ok">
+        <article class="card warn">
           <header class="card-head">
             <h2>JakovDEV</h2>
-            <span class="badge ok">In sync</span>
+            <span class="badge warn">Drift</span>
           </header>
           <dl class="meta">
             <div><dt>CPI package version</dt><dd>—</dd></div>
@@ -118,7 +118,7 @@
           </dl>
           <table>
             <thead><tr><th>Artifact</th><th>git &rarr; CPI</th><th>Status</th></tr></thead>
-            <tbody><tr><td class="name">iflow_test_1<span class="id">iflow_test_1</span></td><td class="ver"><span class="delta"><span class="v git">1.0.5</span><span class="arrow" aria-hidden="true">&rarr;</span><span class="v cpi">1.0.5</span></span></td><td class="st"><span class="pill up-to-date">In sync</span></td></tr><tr><td class="name">iflow_test_2<span class="id">iflow_test_2</span></td><td class="ver"><span class="delta"><span class="v git">1.0.3</span><span class="arrow" aria-hidden="true">&rarr;</span><span class="v cpi">1.0.3</span></span></td><td class="st"><span class="pill up-to-date">In sync</span></td></tr></tbody>
+            <tbody><tr><td class="name">iflow_test_1<span class="id">iflow_test_1</span></td><td class="ver"><span class="delta changed"><span class="v git">1.0.5</span><span class="arrow" aria-hidden="true">&rarr;</span><span class="v cpi">1.0.8</span></span></td><td class="st"><span class="pill outdated">Drift</span></td></tr><tr><td class="name">iflow_test_2<span class="id">iflow_test_2</span></td><td class="ver"><span class="delta"><span class="v git">1.0.3</span><span class="arrow" aria-hidden="true">&rarr;</span><span class="v cpi">1.0.3</span></span></td><td class="st"><span class="pill up-to-date">In sync</span></td></tr></tbody>
           </table>
         </article>
   </main>
