@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T07:58:18.435696+00:00",
+  "generatedAt": "2026-08-20T08:04:46.461716+00:00",
   "allUpToDate": false,
   "packageCount": 1,
   "packages": [
@@ -14,7 +14,7 @@
           "id": "iflow_test_1",
           "name": "iflow_test_1",
           "gitVersion": "1.0.5",
-          "cpiVersion": "Active",
+          "cpiVersion": "1.0.9",
           "status": "outdated"
         },
         {
