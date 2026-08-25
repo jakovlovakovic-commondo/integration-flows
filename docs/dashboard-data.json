@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T08:28:00.705208+00:00",
+  "generatedAt": "2026-08-25T08:10:44.679205+00:00",
   "allUpToDate": false,
   "packageCount": 1,
   "packages": [
@@ -7,7 +7,7 @@
       "packageId": "JakovDEV",
       "syncedAt": "2026-08-11T12:45:44.753604+00:00",
       "cpiPackageVersion": "",
-      "cpiModifiedDate": "1787221676293",
+      "cpiModifiedDate": "1787637495326",
       "upToDate": false,
       "artifacts": [
         {
