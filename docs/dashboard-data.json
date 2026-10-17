@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T10:54:20.297361+00:00",
+  "generatedAt": "2026-10-17T10:16:54.776539+00:00",
   "allUpToDate": false,
   "packageCount": 1,
   "packages": [
@@ -26,9 +26,9 @@
         },
         {
           "id": "test_flow",
-          "name": "test_flow",
+          "name": "Operative - Primavera to SAP PS",
           "gitVersion": null,
-          "cpiVersion": "1.0.1",
+          "cpiVersion": "1.0.2",
           "status": "missing-in-git"
         }
       ]
